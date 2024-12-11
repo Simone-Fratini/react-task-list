@@ -1,12 +1,21 @@
-import { currentTasks, completedTasks } from '../utils/tasksUtils';
+import { currentTasks, renderBadge } from '../utils/tasksUtils';
 
 function CurrentTasks() {
   return (
     <div>
-      <h2>Current Tasks {currentTasks}</h2>
+      <h2>Current Tasks ({currentTasks().length})</h2>
         <ul>
-            {taskUtils.getCurrentTasks()}
-        </ul>
+        {currentTasks().map((task) => (
+          <li className='py-2'>
+            <div>
+              <strong>{task.title}</strong>
+              {renderBadge(task.state)}
+            </div>
+            <div>Priority: {task.priority}</div>
+            <div>Est. time: {task.estimatedTime}</div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

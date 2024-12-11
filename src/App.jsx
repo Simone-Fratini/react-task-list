@@ -1,6 +1,6 @@
-import headerComponent from './components/headerComponent'
-import completedTasks from './components/completedTasks'
-import CurrentTasks from './components/currentTasks'
+import HeaderComponent from './components/HeaderComponent.jsx'
+import CompletedTasks from './components/CompletedTasks.jsx'
+import CurrentTasks from './components/CurrentTasks.jsx' 
 import './App.css'
 
 
@@ -9,9 +9,14 @@ function App() {
 
   return (
     <>
-      {headerComponent()}
-      {CurrentTasks()}
-      {completedTasks()}
+      <HeaderComponent />
+      <div className='px-3 py-4'>
+      <CurrentTasks />
+      <hr />
+      <CompletedTasks />
+
+      </div>
+
     </>
   )
 }

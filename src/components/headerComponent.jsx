@@ -1,5 +1,5 @@
 
-function headerComponent() {
+function HeaderComponent() {
     return(
         <header className="py-3 px-3 sf-bggreen">
             <h1 className="sf-title">Task Manager</h1>
@@ -7,4 +7,4 @@ function headerComponent() {
     );
 }
 
-export default headerComponent;
+export default HeaderComponent;
