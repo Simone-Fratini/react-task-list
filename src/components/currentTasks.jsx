@@ -6,7 +6,7 @@ function CurrentTasks() {
       <h2>Current Tasks ({currentTasks().length})</h2>
         <ul>
         {currentTasks().map((task) => (
-          <li className='py-2'>
+          <li className='py-2' key={task.id}>
             <div>
               <strong>{task.title}</strong>
               {renderBadge(task.state)}
