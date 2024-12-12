@@ -1,6 +1,6 @@
-import HeaderComponent from './components/HeaderComponent.jsx'
-import CompletedTasks from './components/CompletedTasks.jsx'
-import CurrentTasks from './components/CurrentTasks.jsx' 
+import HeaderComponent from './components/HeaderComponentsQS.jsx'
+import CompletedTasks from './components/CompletedTasksciao.jsx'
+import CurrentTasks from './components/CurrentTaskstest.jsx' 
 import './App.css'
 
 
