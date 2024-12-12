@@ -1,26 +1,30 @@
-.sf-bggreen{
+.sf-bggreen {
     background-color: #50da9c;
 }
 
-.sf-title{
+.sf-title {
     color: #000000;
     font-size: 50px;
 }
 
-li{
+li {
     list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+    list-style-position: inside;
+    
 }
+
 ul {
     margin: 0;
-    padding: 0;
+    padding: 0 !important;
     list-style: none;
 }
 
 
-hr{
-    height: 2px;  
-    background-color: black;  
+hr {
+    height: 2px;
+    background-color: black;
     border: none;
-        
-}
 
+}
